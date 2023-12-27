@@ -1,7 +1,5 @@
 # Planner
 
-This project is a linked list container that stores information about a student’s pending homework assignments. The list is always kept in order by the date that an assignment is due.
-
 The `Date` class has been altered so that it can now have a date object set to today, using the computer’s internal clock. In the same file there is a new class called `DateTime`, which records the hour and minute when something happened as well as a date.
 
 Using these two, a class called `Assignment` is defined, which records the *name* of an assignment (a string), the *course* the assignment is for (a string), the date/time the assignment was *entered* (a `DateTime`) and the date/time when the assignment is *due* (a `DateTime`). The overloaded comparison operators for the `Assignment` class are based on the date/time an assignment is due, so if assignment1 < assignment2 it means that assignment1 is due before assignment2, disregarding name, course, and time the assignment was entered.
